@@ -12,12 +12,18 @@
 
     <nav>
         <a href="">
-            <div>
+            <div class="logoDiv">
                 <img class="logo" src="./logo_1-removebg-preview.png" alt="Logo">
             </div>
         </a>
 
-        <div class="navLinks">
+        <div class="navLinks" id="navLinks">
+
+            <button class="closeMenu" id="closeMenu">
+                X
+            </button>
+
+
             <a href="">
                 <div>
                     Home
@@ -25,11 +31,7 @@
             </a>
 
 
-            <a href="">
-                <div>
-                    Presale
-                </div>
-            </a>
+
 
             <a href="">
                 <div>
@@ -39,17 +41,27 @@
 
             <a href="">
                 <div>
+                    Presale
+                </div>
+            </a>
+
+            <a href="">
+                <div>
                     Airdrop
                 </div>
             </a>
 
-
         </div>
+
+        <button class="menu" id="menu">
+            <img src="./hamburger icon.svg" alt="">
+        </button>
+
     </nav>
 
     <main>
 
-        <section>
+        <section id="home" class="home">
             <div>
                 <img src="" alt="">
             </div>
@@ -57,13 +69,13 @@
             <div class="homeContent">
                 $SHN is a forked coin on the Solana built by Solana degens. It is
                 born by the need of the culture to welcome bears into the Solana netwok.
-                Built in the bull season of 2024, $SHN aims to add value and fun to  the Solana ecosysytem
+                Built in the bull season of 2024, $SHN aims to add value and fun to the Solana ecosysytem
             </div>
 
         </section>
 
 
-        <section>
+        <section id="token">
             <div class="tokenDiv">
                 <h3>Token</h3>
                 <div>
@@ -106,10 +118,10 @@
                     <div>Manual Listing</div>
                 </div>
             </div>
-        
+
         </section>
 
-        <section>
+        <section id="Tokenomics">
             <div class="tokenomicsDiv">
                 <h3>Tokenomics</h3>
 
@@ -161,20 +173,25 @@
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id="presale">
+            <div class="presaleDiv">
                 <h3>Presale</h3>
+                <div class="preFirst">
+                    <div>Contract Address:</div>
+                    <button class="copy" id="copy"><img class="copyImg" src="./copy-svgrepo-com.svg" alt=""></button>
+                </div>
+                <div class="presaleDetail">Min: 0.1 Sol</div>
+                <div class="presaleDetail">Max: 1 Sol</div>
 
-                <div>Contract Address:</div>
-                <button id="copy"></button>
+                <div class="preLast">
+                    $SHN will arrive in your wallet 4 hours before listing
+                </div>
             </div>
-            <div>Min: 0.1 Sol</div>
-            <div>Max: 1 Sol</div>
         </section>
     </main>
 
     <footer>
-
+        Copyright © 2024 $SHN
     </footer>
 
     <script src="./index.js"></script>
