@@ -1,0 +1,254 @@
+@media only screen and (max-width: 600px) {
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        --mainColor: rgb(40, 39, 59);
+        --subColor1: rgb(37, 37, 37);
+        --faintBlack:rgba(0,0,0,0.2);
+        --faintWhite:rgba(255, 255, 255, 0.349);
+        font-family: roboto;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    nav{
+        height: 50px;        
+        background-color:var(--mainColor);
+        display: flex;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    .navLinks{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 120px;
+        background-color: white;
+        /* padding: 0px 1px 0px 1px; */
+        width: 100vw;
+        box-shadow: 1px 1px 4px 0px var(--faintBlack);
+        align-items: center;
+    }
+
+    .navLinks>a{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+        text-decoration: none;
+        color: var(--subColor1);
+        font-size: 15px;
+    }
+
+
+    .navLinks>a:active{
+        height: 40px;
+        /* width: 100vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--mainColor);
+        color: white;
+    }
+
+    .navLinks>a>div{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        background-color: var(--mainColor);
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .homeContent{
+        width: 90%;
+        border: 1px solid rgba(146, 146, 146, 0.671);
+        border-radius: 10px;
+        background-color: var(--subColor1);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .tokenDiv{
+        background-color: var(--subColor1);
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px var(--faintWhite);
+        width: 90%;
+        /* box-shadow: 1px 1px 1px 0px var(--faintWhite) , */
+        /* -1px -1px 1px 0px var(--faintWhite) ; */
+    }
+
+    .tokenDiv>h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .tokenDiv>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+
+    .tokenomicsDiv{
+        background-color: var(--subColor1);
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px var(--faintWhite);
+        width: 90%;
+    }
+
+    .tokenomicsDiv>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+        --mainColor: rgb(40, 39, 59);
+        --subColor1: rgb(37, 37, 37);
+        --faintBlack:rgba(0,0,0,0.2);
+        --faintWhite:rgba(255, 255, 255, 0.349);
+        font-family: roboto;
+    }
+
+    nav{
+        height: 50px;        
+        background-color:var(--mainColor);
+        display: flex;
+    }
+
+    .navLinks{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 120px;
+        background-color: white;
+        /* padding: 0px 1px 0px 1px; */
+        width: 100vw;
+        box-shadow: 1px 1px 4px 0px var(--faintBlack);
+        align-items: center;
+    }
+
+    .navLinks>a{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+        text-decoration: none;
+        color: var(--subColor1);
+        font-size: 15px;
+    }
+
+
+    .navLinks>a:active{
+        height: 40px;
+        /* width: 100vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--mainColor);
+        color: white;
+    }
+
+    .navLinks>a>div{
+        text-decoration: none;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        background-color: var(--mainColor);
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .homeContent{
+        width: 90%;
+        max-width: 500px;
+        border: 1px solid rgba(146, 146, 146, 0.671);
+        border-radius: 10px;
+        background-color: var(--subColor1);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .tokenDiv{
+        background-color: var(--subColor1);
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px var(--faintWhite);
+        width: 90%;
+        max-width: 500px;
+        /* box-shadow: 1px 1px 1px 0px var(--faintWhite) , */
+        /* -1px -1px 1px 0px var(--faintWhite) ; */
+    }
+
+    .tokenDiv>h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .tokenDiv>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+
+    .tokenomicsDiv{
+        background-color: var(--subColor1);
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px var(--faintWhite);
+        width: 90%;
+        max-width: 500px;
+
+    }
+
+    .tokenomicsDiv>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+    }
+
+}
