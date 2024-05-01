@@ -32,11 +32,11 @@
         justify-content: space-between;
         align-items: center;
         padding-left: 20px;
-        /* padding-top: 5px; */
         position: fixed;
         top: 0px;
         width: calc(100% - 20px);
         box-shadow: 0px 1px 1px 0px var(--faintWhite);
+        z-index: 40;
     }
 
     .navLinks{
@@ -45,12 +45,12 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        /* height: 120px; */
         box-shadow:0px 2px 1px 0px var(--faintWhite);
         background-color: var(--mainColor);
         color: white;
         width: 100vw;
         align-items: center;
+        z-index: 400;
     }
 
     .navLinks>a{
@@ -64,11 +64,10 @@
         align-items: center;
         justify-content: center;
         background-color: var(--mainColor);
-        z-index: 2;
+        z-index: 0;
         text-decoration: none;
         font-size: 14px;
     }
-
 
     .navLinks>a:active{
         height: 30px;
@@ -199,11 +198,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
 
     .presaleDetail{
-        /* width: 100%; */
-        /* text-align: center; */
+
     }
 
     .preLast{
@@ -238,6 +237,41 @@
         width: 30px;
         filter: invert(100%);
     }    
+
+    .airdropCont{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .airdropLabel{
+        font-size: 20px;
+    }
+
+    .walletInput{
+        height: 30px;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .walletInput::placeholder{
+        font-size: 14px;
+    }
+
+    .subWal{
+        height: 30px;
+        font-size: 14px;
+        font-size: roboto;
+        border:none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: rgb(212, 140, 6);
+    }
+
     footer{
         height: 50px;
         display: flex;
@@ -284,6 +318,7 @@
         left: 0px;
         width: calc(100% - 20px);
         box-shadow: 0px 1px 1px 0px var(--faintWhite);
+        z-index: 40;
     }
 
     .navLinks{
@@ -502,6 +537,41 @@
         width: 30px;
         filter: invert(100%);
     }
+
+    .airdropCont{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .airdropLabel{
+        font-size: 20px;
+    }
+
+    .walletInput{
+        height: 40px;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .walletInput::placeholder{
+        font-size: 16px;
+    }
+
+    .subWal{
+        height: 30px;
+        font-size: 16px;
+        font-size: roboto;
+        border:none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: rgb(212, 140, 6);
+    }
+
     footer{
         height: 50px;
         display: flex;
@@ -511,4 +581,6 @@
         border-top: solid 1px ;
         color: white;
     }
+
+
 }
