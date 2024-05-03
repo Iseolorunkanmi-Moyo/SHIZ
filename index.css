@@ -2,6 +2,7 @@
     scroll-behavior: smooth;
 }
 
+
 .air{
     display: flex;
     justify-content: center;
@@ -10,6 +11,13 @@
 
 
 @media only screen and (max-width: 600px) {
+
+    #subSuccess{
+    font-size: 13px;
+    color: rgb(255, 128, 128);
+    display: none;
+}
+
 
     body{
         padding: 0px;

