@@ -14,7 +14,19 @@
 
     #subSuccess{
     font-size: 13px;
-    color: rgb(255, 128, 128);
+    color: rgb(115, 240, 115);
+    display: none;
+}
+
+#subWarning{
+    font-size: 13px;
+    color:rgb(252, 252, 134);
+    display: none;
+}
+
+#subReminder{
+    font-size: 13px;
+    color: rgb(115, 240, 115);
     display: none;
 }
 
